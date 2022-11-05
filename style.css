@@ -79,6 +79,12 @@ header>nav>ul a {
     color: var(--color-blue);
 }
 
+header>nav>ul a:hover {
+    border-top: 3px solid var(--color-yellow);
+    border-bottom: 1px solid var(--color-yellow);
+    color: var(--color-orange-dark);
+}
+
 header>nav>ul>li>a.active {
     border-top: 3px solid var(--color-yellow);
     border-bottom: 1px solid var(--color-yellow);
@@ -112,6 +118,10 @@ header>nav>ul>li>a.active {
     width: 78px;
     height: 72px;
     text-decoration: none;
+}
+
+.bottom-right-nav-pane a:hover {
+    background: radial-gradient(#e664648f, #ffffff, #ffffff);
 }
 
 .bottom-right-nav-pane a img {
@@ -152,7 +162,6 @@ header>nav>ul>li>a.active {
     padding: 0 15px;
 }
 
-
 /* =======================overlay======================= */
 .overlay {
     position: absolute;
@@ -178,13 +187,14 @@ header>nav>ul>li>a.active {
 .overlay>div>a>.close {
     position: absolute;
     right: 5px;
-    top:5px;
+    top: 5px;
 }
 
-body.disable-scrollbars{
-	height:100%;
-	overflow:hidden;
+body.disable-scrollbars {
+    height: 100%;
+    overflow: hidden;
 }
+
 /* =======================main======================= */
 main {
     width: 80%;
@@ -261,7 +271,7 @@ main#home img {
 
 /* =========================post============================ */
 #post>.filter-box {
-    margin: 15px 0;;
+    margin: 15px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -402,7 +412,6 @@ main#home img {
     margin: 15px 0;
 }
 
-
 .post-content {
     width: 90%;
     height: 371px;
@@ -435,7 +444,8 @@ main#home img {
 }
 
 /* send successfully */
-.send-successfully>div {
+.send-successfully>div,
+.add-friends-successfully>div {
     width: 1176px;
     height: 378px;
     margin: 25vh auto;
@@ -445,7 +455,305 @@ main#home img {
     align-items: center;
 }
 
-.send-successfully>div>h1 {
+.send-successfully>div>h1,
+.add-friends-successfully>div>h1 {
     color: var(--color-strong-blue);
     width: 70%;
+}
+
+/* =========================people============================ */
+#find-people {
+    display: flex;
+    flex-direction: column;
+}
+
+#find-people>section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--color-strong-blue);
+}
+
+#find-people>section>img {
+    width: 50%;
+}
+
+#find-people>section>div>* {
+    margin: 30px;
+}
+
+#find-people .people-title>h1:nth-child(2) {
+    text-align: end;
+}
+
+#find-people .button {
+    padding: 5px 35px;
+}
+
+/* invite-friends overlay */
+#invite-friends>div,
+#invite-arounds>div {
+    width: 928px;
+    height: 669px;
+    margin: 10vh auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--color-strong-blue);
+}
+
+#invite-friends .content,
+#invite-arounds .content {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#invite-friends .content>div,
+#invite-arounds .content>div {
+    width: 45%;
+    height: 540px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    border: 1px solid var(--color-blue);
+    overflow: hidden;
+}
+
+#invite-friends .content h5,
+#invite-friends .content h6,
+#invite-arounds .content h5 {
+    text-align: center;
+    margin: 5px auto;
+}
+
+#friends-contacts .friends-contacts-group>p,
+#friends-contacts .friends-contacts-friends>p {
+    text-align: center;
+    color: var(--color-white);
+    background-color: var(--color-blue);
+    padding: 5px 0;
+}
+
+#friends-contacts .friends-contacts-group,
+#friends-contacts .friends-contacts-friends {
+    overflow: hidden;
+}
+
+#invite-friends .friends-entry,
+#invite-arounds .friends-entry {
+    display: flex;
+    height: 72px;
+    justify-content: space-between;
+    border: 1px solid var(--color-blue);
+    margin: -0.5px;
+    align-items: center;
+    padding: 0 10px;
+}
+
+#invite-friends .friends-entry>img,
+#invite-arounds .friends-entry>img {
+    width: 52px;
+    height: 52px;
+}
+
+#invite-friends .friends-entry>.button,
+#invite-arounds .friends-entry>.button {
+    height: 20px;
+    width: 72px;
+    text-align: center;
+}
+
+#invite-friends .friends-entry>.button.active,
+#invite-arounds .friends-entry>.button.active {
+    box-shadow: 0 0 0 var(--color-shadow);
+    color: var(--color-blue2);
+    border-color: var(--color-blue2);
+}
+
+#friends-frequent>h5 {
+    padding-bottom: 20px;
+}
+
+#friends-search {
+    margin: 10px;
+    box-shadow: 0 0 0 var(--color-shadow);
+    color: var();
+}
+
+#friends-go {
+    width: 100px;
+    text-align: center;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    border-color: var(--color-white);
+}
+
+/* invite-arounds overlay */
+#invite-arounds #arounds-finding {
+    border-width: 0px;
+    justify-content: center;
+}
+
+/* video */
+#video-pane {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.video-button {
+    /* cursor: pointer; */
+    border: 1px solid var(--color-blue);
+    border-radius: 30px;
+    width: 110px;
+    height: 90px;
+    background-color: var(--color-white);
+    color: var(--color-blue);
+    box-shadow: 0 4px 4px var(--color-shadow);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.stop-video {
+    position: absolute;
+    top: 5px;
+    right: -35px;
+    width: 75px;
+    height: 95px;
+    z-index: 100;
+}
+
+.video-button>a{
+    text-decoration: none;
+    color: var(--color-blue);
+}
+
+.video-button>img {
+    width: 37px;
+    height: 37px;
+}
+
+.video-function-botton {
+    position: absolute;
+}
+
+.video-box {
+    /* width: 308px; */
+    width: 25%;
+    height: 246px;
+    ;
+}
+
+.video-box-row {
+    display: flex;
+    justify-content: center;
+}
+
+.video-box {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.video-box-1 {
+    background-image: url(./images/people/video/0\ \(1\).png);
+}
+
+.video-box-2 {
+    background-image: url(./images/people/video/0\ \(2\).png);
+}
+
+.video-box-3 {
+    background-image: url(./images/people/video/0\ \(3\).png);
+}
+
+.video-box-4 {
+    background-image: url(./images/people/video/0\ \(4\).png);
+}
+
+.video-box-5 {
+    background-image: url(./images/people/video/0\ \(5\).png);
+}
+
+.video-box-6 {
+    background-image: url(./images/people/video/0\ \(6\).png);
+}
+
+.video-box-7 {
+    background-image: url(./images/people/video/0\ \(7\).png);
+}
+
+.video-box-8 {
+    background-image: url(./images/people/video/0\ \(8\).png);
+}
+
+.video-box-9 {
+    background-image: url(./images/people/video/0\ \(9\).png);
+}
+
+.video-box-10 {
+    background-image: url(./images/people/video/0\ \(10\).png);
+}
+
+.video-box-bottom {
+    position: absolute;
+    bottom: 0;
+    background-color: var(--color-white);
+    left: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#video-pane .video-function-botton {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 100;
+    bottom: -30px;
+    width: 100%;
+}
+
+.video-left-botton,
+.video-right-botton {
+    display: flex;
+    gap: 20px;
+}
+
+/* transcription */
+.transcription {
+    width: 524px;
+    height: 72px;
+    position: fixed;
+    top: auto;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0);
+    display: block;
+}
+
+.transcription>div {
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.753);
+    box-shadow: 0 4px 4px var(--color-shadow);
+    backdrop-filter: blur(14px);
+}
+
+.transcription>div .close {
+    width: 15px;
+    height: 15px;
 }
