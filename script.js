@@ -14,6 +14,10 @@ $(function () {
     },
   });
 
+  var backButton = $("main>nav>a");
+  backButton.click(function() {
+    history.back();
+  });
   /* ===============================post=========================== */
   var createPost = $("#create-post-button");
   createPost.on({
@@ -67,9 +71,26 @@ $(function () {
 
   var addFriendButton = $(".video-box-bottom>a");
   addFriendButton.on({
-    click: function() {
-        $(".add-friends-successfully").show();
-        disableScrollbars();
-    }
+    click: function () {
+      $(".add-friends-successfully").show();
+      disableScrollbars();
+    },
+  });
+
+  /* ===============================activity=========================== */
+  var event1 = $(".activity-box-1");
+  var event2 = $(".activity-box-2");
+  var event3 = $(".activity-box-3");
+
+  event1.click(function() {
+    $(location).attr("href","./activities-series.html")
+  });
+
+  event2.click(function() {
+    $(location).attr("href","./activities-ongoing.html")
+  });
+
+  event3.click(function() {
+    $(location).attr("href","./activities-all.html")
   });
 });

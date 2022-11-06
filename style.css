@@ -633,7 +633,7 @@ main#home img {
     z-index: 100;
 }
 
-.video-button>a{
+.video-button>a {
     text-decoration: none;
     color: var(--color-blue);
 }
@@ -756,4 +756,237 @@ main#home img {
 .transcription>div .close {
     width: 15px;
     height: 15px;
+}
+
+/* =======================activity========================== */
+#activity>section {
+    margin: 10px auto;
+}
+
+.activity-title {
+    background-image: url(./images/activity/71.png);
+    background-size: cover;
+    background-position: center;
+
+    height: 375px;
+    position: relative;
+}
+
+.activity-title>div {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 4px var(--color-shadow);
+    border-radius: 10px;
+    width: 420px;
+    height: 120px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: var(--color-strong-blue);
+}
+
+.activity-box {
+    display: flex;
+    justify-content: space-around;
+    background-size: cover;
+}
+
+.activity-box>div {
+    width: 345px;
+    height: 396px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.activity-box-1 {
+    background-image: url(./images/activity//0\ \(1\).png);
+}
+
+.activity-box-2 {
+    background-image: url(./images/activity//0\ \(2\).png);
+}
+
+.activity-box-3 {
+    background-image: url(./images/activity//0\ \(3\).png);
+}
+
+.activity-box h4,
+.activity-box p {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    text-align: center;
+}
+
+.activity-box h4 {
+    width: 224px;
+    height: 45px;
+    border-radius: 5px 5px 0 0;
+    line-height: 45px;
+}
+
+.activity-box p {
+    width: 315px;
+    height: 70px;
+    padding: 15px;
+    padding-top: 30px;
+}
+
+/* =======================series activity========================== */
+#activity-series h2 {
+    margin: 15px;
+}
+
+#activity-series .a-big-box {
+    background-size: cover;
+    background-position: center;
+}
+
+#activity-series .a-big-box-1 {
+    background-image: url(./images/activity/series/0\ \(1\).png);
+}
+
+#activity-series .a-big-box-2 {
+    background-image: url(./images/activity/series/0\ \(2\).png);
+}
+
+#activity-series .a-big-box-3 {
+    background-image: url(./images/activity/series/0\ \(3\).png);
+}
+
+#activity-series>section {
+    color: var(--color-strong-blue);
+}
+
+#activity-series>section>nav {
+    display: flex;
+    gap: 30px;
+    margin: 30px;
+}
+
+#activity-series>section>nav>a {
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: var(--color-strong-blue);
+}
+
+#activity-series>section>nav>a.active {
+    color: var(--color-strong-pink);
+}
+
+#activity-series>section .big-pane {
+    display: flex;
+    justify-content: space-around;
+}
+
+#activity-series>section .big-pane .a-big-box {
+    width: 343px;
+    height: 384px;
+    position: relative;
+}
+
+#activity-series>section .big-pane .a-big-box .content {
+    height: 130px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), black);
+    left: 12px;
+    right: 12px;
+    border-radius: 0 0 20px 20px;
+
+    color: var(--color-white);
+}
+
+#activity-series>section .small-pane .small-box-row {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin: 10px auto;
+}
+
+#activity-series>section .a-small-box {
+    width: 497px;
+    height: 96px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid var(--color-strong-blue);
+    border-left-width: 6px;
+    padding: 10px 20px;
+}
+
+/* =======================live activity========================== */
+.live-label {
+    width: 146px;
+    height: 36px;
+    background-color: var(--color-green-dark);
+    color: var(--color-white);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 10px;
+}
+
+.live-pane-row {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+
+.a-live-box {
+    width: 343px;
+    height: 158px;
+    border: 1px solid var(--color-blue);
+    display: flex;
+    justify-content: stretch;
+}
+
+.a-live-box.hide{
+    visibility: hidden;
+}
+
+.a-live-box>img {
+    width: 160px;
+}
+
+.a-live-box .content {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.a-live-box .content .button {
+    height: 14px;
+    padding: 0 auto;
+    line-height: 14px;
+}
+
+/* =======================Calendar, mailbox, setting========================== */
+main>.center>img {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+main>.center {
+    margin: 15px auto;
 }
