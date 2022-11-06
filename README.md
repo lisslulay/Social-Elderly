@@ -4,7 +4,7 @@ Due to the prototype's complexity and time limits, I only completed a portion of
 
 The page with completed HTML and CSS:
 
-[activities.html](pages\activities.html)  [activities-ongoing.html](pages\activities-ongoing.html)  [activities-series.html](pages\activities-series.html)  [people.html](pages\people.html)  [post.html](pages\post.html)  [video-with-arounds.html](pages\video-with-arounds.html)  [video-with-friends.html](pages\video-with-friends.html) 
+[activities.html](pages\activities.html),  [activities-ongoing.html](pages\activities-ongoing.html),  [activities-series.html](pages\activities-series.html),  [people.html](pages\people.html),  [post.html](pages\post.html),  [video-with-arounds.html](pages\video-with-arounds.html),  [video-with-friends.html](pages\video-with-friends.html) 
 
 - Completed function:
 
@@ -19,4 +19,4 @@ The page with completed HTML and CSS:
 
 Pages using images instead:
 
- [activities-all.html](pages\activities-all.html)  [calendar.html](pages\calendar.html)  [mailbox.html](pages\mailbox.html)  [setting.html](pages\setting.html) 
+ [activities-all.html](pages\activities-all.html),  [calendar.html](pages\calendar.html),  [mailbox.html](pages\mailbox.html),  [setting.html](pages\setting.html) 
