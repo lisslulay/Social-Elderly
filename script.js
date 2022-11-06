@@ -14,7 +14,7 @@ $(function () {
     },
   });
 
-  var backButton = $("main>nav>a");
+  var backButton = $("main>nav>a>img");
   backButton.click(function() {
     history.back();
   });
